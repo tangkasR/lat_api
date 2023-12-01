@@ -23,3 +23,5 @@ const UserModel = db.define(
   }
 );
 export default UserModel;
+
+

@@ -9,10 +9,9 @@ dotenv.config();
 const app = express();
 
 // migrasi
-
-(async () => {
-  await db.sync();
-})();
+// (async () => {
+//   await db.sync();
+// })();
 
 // end migrasi
 app.use(
@@ -26,6 +25,6 @@ app.use(fileUpload());
 app.use(express.static("public"));
 app.use(UserRoute);
 
-app.listen(process.env.APP_PORT, () => {
-  console.log(`Server is running in port ${process.env.APP_PORT}...`);
+app.listen(5000, () => {
+  console.log(`Server is running in port ${5000}...`);
 });
