@@ -25,6 +25,6 @@ app.use(fileUpload());
 app.use(express.static("public"));
 app.use(UserRoute);
 
-app.listen(5000, () => {
-  console.log(`Server is running in port ${5000}...`);
+app.listen(53520, () => {
+  console.log(`Server is running in port ${53520}...`);
 });
